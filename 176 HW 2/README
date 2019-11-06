@@ -1,0 +1,5 @@
+The program works to the specifications given by the assignment with two bits that might be wrong.
+
+One is that you need to run the executables with ./client <IP> <port> instead of client <IP> <port>
+
+The other is that the TCP server sleeps for one second after it writes each time so that the client has time to read it because otherwise the server will write multiple times before the client ever reads it and this breaks the program.
